@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      {% load static %}
+    <link rel="stylesheet" href="{% static 'amadon/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+  <body>
+      <div id='wrapper'>
+        <h1>AMADON STORE</h1>
+        <div id='text'>
+          <div class='item'> 
+              <h2 class='h2'>Dojo T-Shirt</h2>
+              <h2 class='h2'>Dojo Sweater</h2>
+              <h2 class='h2'>Dojo Cup</h2>
+              <h2 class='h2'>Algorithm Book</h2>
+          </div>
+          <div class='price'>
+            <h2>$19.99</h2>  
+            <h2>$29.99</h2>  
+            <h2>$4.99</h2>  
+            <h2>$49.99</h2>  
+          </div>
+          <div class='quantity'> 
+            <form action='amadon/buy' method='post'>
+              {% csrf_token %}
+              <select class='select' name='select'>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select> 
+              <input type='hidden'name='ids' value='1015'>
+              <input class='sub'type='submit' value='BUY!'>
+            </form>
+            <form action='amadon/buy' method='post'>
+              {% csrf_token %}
+              <select class='select' name='select'>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select> 
+              <input type='hidden'name='ids' value='1020'>
+              <input class='sub'type='submit' value='BUY!'>
+            </form>
+            <form action='amadon/buy' method='post'>
+              {% csrf_token %}
+              <select class='select' name='select'>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select> 
+              <input type='hidden'name='ids' value='1030'>
+              <input class='sub'type='submit' value='BUY!'>
+            </form>
+            <form action='amadon/buy' method='post'>
+              {% csrf_token %}
+              <select class='select' name='select'>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+              </select> 
+              <input type='hidden'name='ids' value='1040'>
+              <input class='sub'type='submit' value='BUY!'>
+            </form>
+          </div>        
+      </div>
+  </body>
+</html>

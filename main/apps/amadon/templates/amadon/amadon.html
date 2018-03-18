@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      {% load static %}
+    <link rel="stylesheet" href="{% static 'amadon/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+  <body>
+      <div id='wrapper'>
+        <h1>Thank you for your business!</h1>
+        <h2>We charged your card for $ {{request.session.total}}</h2>
+        <h3>You have ordered {{request.session.counter}} items so far and spent ${{request.session.all_totals}}  with Amadon.com!</h3> 
+        <a href='/clear'>Go Back</a>
+      </div>
+  </body>
+</html>

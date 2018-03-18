@@ -1,0 +1,62 @@
+#wrapper{
+    /* background: linear-gradient(gray, black); */
+    width: 1000px;
+    height: 1000px;
+}
+#text{
+    width: 666px;
+    height: 400px;
+    background: white;
+    border: 1px black solid;
+}
+.item{
+    display: inline-block;
+    width: 250px;
+    height: 400px;
+    background: white;
+    margin: 0px;
+    vertical-align: top;
+}
+.price{
+    display: inline-block;
+    width: 125px;
+    height: 400px;
+    border-left: 1px black solid;
+    margin: 0px;
+    vertical-align: top;
+    margin-top: 0px;
+    
+}
+.quantity{
+    display: inline-block;
+    width: 100px;
+    height: 400px;
+    border-left: 1px black solid;
+    margin: 0px;
+    vertical-align: top;
+    margin-top: 0px;
+}
+.actions{
+    display: inline-block;
+    width: 175px;
+    height: 400px;
+    border-left: 1px black solid;
+    margin: 0px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+.h2{
+    vertical-align: top;
+}
+.sub{
+    height: 50px;
+    margin-left: 68px;
+    margin-bottom: 25px;
+    margin-top: 9px;
+}
+.select{
+    display: inline-block;
+    margin-bottom: 21px;
+    margin-right: 50px;
+    margin-top: 13px;
+}
